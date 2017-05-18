@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "mime": "*",
-    "connect": "2.x",
+    "connect": "3.6.2",
     "send": "*",
     "crc": "*"
   },

@@ -4,7 +4,9 @@
   "description": "pitaya ======",
   "main": "lib/pitaya.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -12,10 +14,12 @@
   },
   "dependencies": {
     "mime": "*",
-    "connect": "2.x",
+    "connect": "3.6.2",
     "send": "*",
-    "crc": "*"
+    "crc": "*",
+    "snyk": "^1.30.1"
   },
   "author": "",
-  "license": "BSD"
+  "license": "BSD",
+  "snyk": true
 }
